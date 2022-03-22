@@ -1,0 +1,50 @@
+@import "./vars";
+
+.single-post {
+  width: 680px;
+
+  img {
+    height: 350px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: $font-color;
+    width: 85%;
+    margin: 0 0 20px;
+  }
+
+  &__block {
+    width: 15%;
+    text-align: right;
+  }
+
+  &__icon-btn {
+      width: 30px;
+      height: 30px;
+      margin: 3px 5px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:last-child {
+          margin-right: 0;
+      }
+  }
+  &__icon-edit {
+      &:hover svg {
+          fill: green;
+      }
+  }
+
+  &__icon-del {
+    &:hover svg {
+        fill: red;
+    }
+}
+}

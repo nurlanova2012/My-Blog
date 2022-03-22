@@ -1,73 +1,9 @@
 @import "../scss/vars";
 
 .single {
-  margin: 0 auto;
-
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin: 30px auto;
-  }
-
-  &__items-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    img {
-      height: 350px;
-      border-radius: 10px;
+margin-top: 60px;
+    &__inner {
+display: flex;
+justify-content: space-between;
     }
-  }
-
-  &__title {
-    color: $font-color;
-  }
-
-  &__desc {
-    display: flex;
-    position: relative;
-
-    span {
-      position: absolute;
-      top: 25px;
-      right: 15px;
-      color: $font-color;
-    }
-
-    span + span {
-      margin-right: 30px;
-    }
-  }
-  &__icon1 {
-    position: relative;
-    &::after {
-      position: absolute;
-      left: 0;
-      top: 2px;
-      width: 15px;
-      height: 15px;
-      background-image: url("../assets/images/∂.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      content: "";
-    }
-  }
-  &__icon2 {
-    position: relative;
-    &::after {
-      position: absolute;
-      left: 0;
-      top: 2px;
-      width: 15px;
-      height: 15px;
-      background-image: url("../assets/images/pen-to-square-solid.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      content: "";
-    }
-  }
 }

@@ -1,84 +1,81 @@
 @import "../scss/vars";
 
 .write {
-  padding: 0 0 0 50px;
+  padding: 50px 0 0 0;
 
-  &__inner {
-    width: 80%;
-    position: relative;
-    flex: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+  &__form {
+    width: 70%;
     margin: 0 auto;
   }
 
-  span {
-    font-size: 18px;
-    padding: 20px 0;
-    position: relative;
-    padding-left: 28px;
-  
+  &__form-group {
+    display: flex;
+    flex-wrap:  wrap;
+    margin-bottom: 20px;
+  }
 
-    &::before {
-      position: absolute;
-      left: 0;
-      top: 25px;
-      width: 15px;
-      height: 15px;
-      background-image: url("../assets/images/circle-plus-solid.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      content: "";
+  &__file-label {
+    width: 100%;
+    margin: 0 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+
+    svg {
+      margin-right: 20px;
+      fill: $primary;
+      cursor: pointer;
+    }
+  
+  }
+
+  &__file-input {
+    display: none;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid transparentize($color: $dark, $amount: 0.7);
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $dark;
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border: 1px solid $dark;
     }
   }
-  img {
-    margin-bottom: 20px;
-    border-radius: 4px;
-    height: 350px;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-  }
-  input {
-    height: 30px;
-    font-size: 15px;
-    padding: 5px;
-    margin-bottom: 20px;
-    border: 1px solid $dark;
-    border-radius: 2px;
-  }
-
-  textarea {
-    height: 300px;
-    font-size: 15px;
-    padding: 5px;
-    margin-bottom: 20px;
-    border: 1px solid $dark;
-    border-radius: 2px;
+  &__textarea {
+    min-height: 350px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
     resize: none;
   }
 
-  button {
+  img {
+    height: 300px;
     margin-bottom: 20px;
-    font-size: 15px;
-    font-weight: 600;
+    border-radius: 10px;
+  }
+
+  &__publish-btn {
+    padding: 10px 20px;
     border: none;
-    background-color: lighten($color: $bg-color, $amount: 40%);
-    border-radius: 2px;
-    padding: 8px 0;
-    color: $dark;
+    background-color: $font-color;
+    border-radius: 4px;
+    color: $light;
+    font-size: 18px;
+    font-weight: 400;
     cursor: pointer;
-    transition: all 0.3s ease;
-    width: 100px;
 
     &:hover {
-      background-color: $font-color;
+      background-color: $primary;
     }
   }
 }

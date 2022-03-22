@@ -1,12 +1,12 @@
 import { Nav } from "./components";
-import { Single} from "./pages";
+import { Write} from "./pages";
 
 function App() {
   return (
     <>
       <Nav />
  
-      <Single />
+      <Write />
     </>
   );
 }
