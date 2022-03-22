@@ -1,0 +1,71 @@
+@import "../scss/vars";
+
+.sidebar {
+  align-items: flex-start;
+  width: 390px;
+  padding: 20px;
+  background-color: lighten($bg-color, 50%);
+  border-radius: 10px;
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  &__item-title {
+    align-self: stretch;
+    margin: 0 0 20px;
+    padding: 15px 0;
+    border-top: 1px dotted $primary;
+    border-bottom: 1px dotted $primary;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+
+  &__item-menu {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin-bottom: 30px;
+    color: lighten($color: $dark, $amount: 20%);
+  }
+
+  &__item-category {
+    position: relative;
+    padding-left: 20px;
+    line-height: 2;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 15px;
+      height: 15px;
+      background-image: url("../assets/images/icons8-папка.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      content: "";
+    }
+  }
+
+  &__socials {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__socials-item {
+    margin-right: 40px;
+  }
+}

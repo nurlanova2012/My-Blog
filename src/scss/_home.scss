@@ -1,0 +1,8 @@
+@import "../scss/vars";
+
+.home {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}

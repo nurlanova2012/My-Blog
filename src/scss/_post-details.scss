@@ -1,0 +1,74 @@
+@import "../scss/vars";
+
+.post-details {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  border-top: 1px dotted transparentize($color: $primary, $amount: 0.1);
+  border-bottom: 1px dotted transparentize($color: $primary, $amount: 0.1);
+  color: lighten($color: $dark, $amount: 20%);
+
+  &__categories {
+    position: relative;
+    padding-left: 20px;
+    margin-right: 20px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 15px;
+      height: 15px;
+      background-image: url("../assets/images/icons8-папка.svg");
+      background-repeat: no-repeat;
+      background-position: 1px 2px;
+      background-size: contain;
+      content: "";
+    }
+  }
+
+  &__category {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+
+  &__author {
+    position: relative;
+    padding-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 15px;
+      height: 15px;
+      background-image: url("../assets/images/user-solid.svg");
+      background-repeat: no-repeat;
+      background-position: 2px 1px;
+      background-size: contain;
+      content: "";
+    }
+  }
+
+  &__date {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 2px;
+    font-size: 14px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 15px;
+      height: 15px;
+      background-image: url("../assets/images/calendar-days-solid.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      content: "";
+    }
+  }
+}

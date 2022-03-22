@@ -1,0 +1,9 @@
+@import "../scss/vars";
+@import "../scss/globals";
+
+.nav__logo {
+    font-family: $logo-font;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 700;
+}

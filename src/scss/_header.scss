@@ -1,0 +1,32 @@
+@import "../scss/vars";
+
+.header {
+  width: 100%;
+  min-height: 400px;
+  background-image: url("../assets/images/bg-1.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px 0;
+
+    h2 {
+      font-size: 50px;
+      font-weight: 700;
+      color: $light;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 25px;
+      font-weight: 300;
+      color: $light;
+    }
+  }
+}

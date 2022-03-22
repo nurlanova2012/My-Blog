@@ -1,0 +1,33 @@
+@import "../scss/vars";
+
+.post {
+    margin: 0 25px 40px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__img {
+        flex-shrink: 0;
+        width: 150px;
+        height: 150px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+
+    &__excerpt {
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+}

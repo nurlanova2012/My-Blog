@@ -1,0 +1,49 @@
+@import "../scss/vars";
+
+.nav {
+  &__inner {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__left {
+    max-width: 150px;
+  }
+
+  &__center {
+    max-width: 700px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__menu-item {
+    list-style: none;
+    margin-left: 40px;
+    color: $primary;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.6s;
+
+    &:hover {
+      transform-origin: center bottom;
+      transform: rotateX(-90deg) translateY(100%);
+    }
+  }
+  &__right {
+    max-width: 300px;
+
+    img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
