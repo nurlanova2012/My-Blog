@@ -1,13 +1,13 @@
 @import "../scss/vars";
 
 .header {
-  width: 100%;
   min-height: 400px;
   background-image: url("../assets/images/bg-1.jpg");
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 40px;
+  z-index: 2;
 
   &__content {
     display: flex;

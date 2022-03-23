@@ -36,6 +36,11 @@
       transform-origin: center bottom;
       transform: rotateX(-90deg) translateY(100%);
     }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
   &__right {
     max-width: 300px;
